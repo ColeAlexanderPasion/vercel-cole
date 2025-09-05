@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+                <!DOCTYPE html>
+                <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cole Alexander E. Pasion</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <script src="https://kit.fontawesome.com/a80de5e8f1.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-  <style>
-    /*  import google fonts */
+                <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Cole Alexander E. Pasion</title>
+                  <link rel="stylesheet" href="style.css">
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+                  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                  <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+                  <script src="https://kit.fontawesome.com/a80de5e8f1.js" crossorigin="anonymous"></script>
+                </head>
+<style>
+/*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -699,192 +696,303 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    } /* projects section styling */
+    .projects {
+        color: #fff;
+        background: #111;
     }
+    .projects .title::before {
+        background: #fff;
+    }
+    .projects .title::after {
+        background: #111;
+        content: "my work";
+    }
+    .projects .carousel .card {
+        background: #222;
+        border-radius: 6px;
+        padding: 30px 25px;
+        text-align: center;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .projects .carousel .card:hover {
+        background: crimson;
+    }
+    .projects .carousel .card .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    .projects .carousel .card:hover .box {
+        transform: scale(1.05);
+    }
+    .projects .carousel .card i {
+        font-size: 45px;
+        color: crimson;
+        margin-bottom: 15px;
+        transition: color 0.3s ease;
+    }
+    .projects .carousel .card:hover i {
+        color: #fff;
+    }
+    .projects .carousel .card .text {
+        font-size: 22px;
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+    }
+    .projects .carousel .card p {
+        font-size: 14px;
+        color: #ccc;
+        line-height: 1.6;
+    } 
+    /* projects section styling (fixed fonts) */
+    .projects {
+        color: #fff;
+        background: #111;
+        font-family: 'Poppins', sans-serif;
+    }
+    .projects .title::before {
+        background: #fff;
+    }
+    .projects .title::after {
+        background: #111;
+        content: "my work";
+    }
+    .projects .carousel .card {
+        background: #222;
+        border-radius: 6px;
+        padding: 30px 25px;
+        text-align: center;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .projects .carousel .card:hover {
+        background: crimson;
+    }
+    .projects .carousel .card .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    .projects .carousel .card:hover .box {
+        transform: scale(1.05);
+    }
+    .projects .carousel .card i {
+        font-size: 45px;
+        color: crimson;
+        margin-bottom: 15px;
+        transition: color 0.3s ease;
+    }
+    .projects .carousel .card:hover i {
+        color: #fff;
+    }
+    .projects .carousel .card .text {
+        font-size: 25px;          /* match services section */
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .projects .carousel .card p {
+        font-size: 15px;          /* slightly bigger for readability */
+        color: #ccc;
+        line-height: 1.6;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
 }
-    </style>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Skills</a></li>
 
+</style>
 
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+                <body>
+                  <div class="scroll-up-btn">
+                    <i class="fas fa-angle-up"></i>
+                  </div>
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Cole Alexander E. Pasion</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#about">About Me</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Cole and I'm a <span class="typing-2"></span></div>
-                    <p>I am Cole Alexander Pasion 19 years old. I was born on september 19 2003, I graduated Highschool
-                        and Senior High School at Santiago Catholic School, I'm Currently Studying at Saint Louis
-                        College of San fernando, La union and I'm taking BS in Information Technology</p>
-                    <a href="#services">My Skills</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- services section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My Skills</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Multimedia</div>
-                        <p>Photo Editing and Video Editing</p>
+                  <!-- Navbar -->
+                  <nav class="navbar">
+                    <div class="max-width">
+                      <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                      <ul class="menu">
+                        <li><a href="#home" class="menu-btn">Home</a></li>
+                        <li><a href="#about" class="menu-btn">About</a></li>
+                        <li><a href="#skills" class="menu-btn">Skills</a></li>
+                        <li><a href="#projects" class="menu-btn">Projects</a></li>
+                        <li><a href="#contact" class="menu-btn">Contact</a></li>
+                      </ul>
+                      <div class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                      </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-brands fa-microsoft"></i>
-                        <div class="text">Visual Studio</div>
-                        <p>Visual Basic</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-brands fa-php"></i>
-                        <div class="text">PHP Programming</div>
-                        <p>PHP</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
+                  </nav>
 
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>Since I'm only 3rd year BSIT student I only have limited knowledge about all of these</p>
-                    <a href="#teams">My Skills</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <div class="bars">
-                                <div class="info">
-                                    <span>Visual Basic</span>
-                                    <span>50%</span>
-                                </div>
-                                <div class="line Vb"></div>
-                            </div>
-                            <div class="bars">
-                                <div class="info">
-                                    <span>Html</span>
-                                    <span>48%</span>
-                                </div>
-                                <div class="line html"></div>
-                            </div>
-                            <div class="bars">
-                                <div class="info">
-                                    <span>Css</span>
-                                    <span>40%</span>
-                                </div>
-                                <div class="line css"></div>
-                            </div>
-                            <div class="bars">
-                                <div class="info">
-                                    <span>JavaScript</span>
-                                    <span>40%</span>
-                                </div>
-                                <div class="line Js"></div>
-                            </div>
+                  <!-- Home -->
+                  <section class="home" id="home">
+                    <div class="max-width">
+                      <div class="home-content">
+                        <div class="text-1">Hello, my name is</div>
+                        <div class="text-2">Cole Alexander E. Pasion</div>
+                        <div class="text-3">And I'm a <span class="typing"></span></div>
+                        <a href="#about">About Me</a>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- About -->
+                  <section class="about" id="about">
+                    <div class="max-width">
+                      <h2 class="title">About Me</h2>
+                      <div class="about-content">
+                        <div class="column left"></div>
+                        <div class="column right">
+                          <div class="text">I'm Cole and I'm a <span class="typing-2"></span></div>
+                          <p>
+                            BSIT graduate passionate about building web-based systems that improve processes and efficiency. 
+                            Skilled in PHP, JavaScript, MySQL, HTML, CSS, and Node.js, with experience in both frontend and backend development.  
+                            During my internships, I developed impactful projects like <b>TORQUE</b>, a vehicle transportation request system at DOST Region 1, 
+                            and the <b>Integrated Fire Safety Compliance Management System</b> (IFSCMS) for the Bureau of Fire Protection.  
+                            I also have experience in website content management, technical support, and digital operations.  
+                            With strong problem-solving, adaptability, and teamwork skills, I am eager to contribute to innovative IT solutions.
+                          </p>
+                          <a href="#skills">My Skills</a>
                         </div>
+                      </div>
                     </div>
-                </div>
-    </section>
+                  </section>
+
+                  <!-- Skills -->
+                  <section class="skills" id="skills">
+                    <div class="max-width">
+                      <h2 class="title">My Skills</h2>
+                      <div class="skills-content">
+                        <div class="column left">
+                          <div class="text">Technical & Soft Skills</div>
+                          <p>
+                            <b>Programming:</b> PHP, JavaScript, HTML, CSS, SQL <br>
+                            <b>Database:</b> MySQL, Navicat <br>
+                            <b>Web Development:</b> Frontend (HTML, CSS, JS), Backend (PHP, Node.js) <br>
+                            <b>Graphic Design:</b> Photo Editing & Video Editing <br>
+                            <b>Tools:</b> Git, VS Code, XAMPP <br><br>
+                            <b>Soft Skills:</b> Teamwork, Communication, Problem-solving, Adaptability, Time Management, Critical Thinking, Reliability
+                          </p>
+                        </div>
+                        <div class="column right">
+                          <div class="bars">
+                            <div class="info"><span>PHP</span><span>90%</span></div>
+                            <div class="line php"></div>
+                          </div>
+                          <div class="bars">
+                            <div class="info"><span>JavaScript</span><span>70%</span></div>
+                            <div class="line js"></div>
+                          </div>
+                          <div class="bars">
+                            <div class="info"><span>HTML & CSS</span><span>100%</span></div>
+                            <div class="line htmlcss"></div>
+                          </div>
+                          <div class="bars">
+                            <div class="info"><span>MySQL</span><span>80%</span></div>
+                            <div class="line mysql"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                    <!-- Projects -->
+                    <section class="projects" id="projects">
+                      <div class="max-width">
+                        <h2 class="title">Projects</h2>
+                        <div class="carousel owl-carousel">
+                          <div class="card">
+                            <div class="box">
+                              <i class="fas fa-car"></i>
+                              <div class="text">TORQUE System</div>
+                              <p>Developed a vehicle transportation request system at DOST-Region 1, reducing request processing time by 40%.</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="box">
+                              <i class="fas fa-fire-extinguisher"></i>
+                              <div class="text">IFSCMS</div>
+                              <p>Built a computerized system for the Bureau of Fire Protection to streamline fire safety inspection tracking.</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="box">
+                              <i class="fas fa-globe"></i>
+                              <div class="text">DOST Website</div>
+                              <p>Managed content updates and news publishing for the official DOST Region 1 website using WordPress.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
 
 
-
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Contact me</p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
+                  <!-- Contact -->
+                  <section class="contact" id="contact">
+                    <div class="max-width">
+                      <h2 class="title">Contact Me</h2>
+                      <div class="contact-content">
+                        <div class="column left">
+                          <div class="text">Get in Touch</div>
+                          <p>Feel free to reach out for collaborations or opportunities.</p>
+                          <div class="icons">
+                            <div class="row">
+                              <i class="fas fa-user"></i>
+                              <div class="info">
                                 <div class="head">Name</div>
                                 <div class="sub-title">Cole Alexander E. Pasion</div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-
+                            <div class="row">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">Philippines</div>
+                                <div class="sub-title">Santiago, Ilocos Sur, Philippines</div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
+                            <div class="row">
+                              <i class="fas fa-envelope"></i>
+                              <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">pasionalexcole@gmail.com</div>
+                                <div class="sub-title">pensionalexcole@gmail.com</div>
+                              </div>
                             </div>
+                            <div class="row">
+                              <i class="fas fa-phone"></i>
+                              <div class="info">
+                                <div class="head">Phone</div>
+                                <div class="sub-title">09452470040</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                        <div class="column right">
+                          <div class="text">Message Me</div>
+                          <form action="#">
+                            <div class="button-area">
+                              <a href="mailto:pensionalexcole@gmail.com"><button type="button">Send Email</button></a>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="button-area">
-                            <a href="#"><button type="button">Contact</button></a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+                  </section>
 
+                  <!-- Footer -->
+                  <footer>
+                    <span>Created By <a href="#home">Cole Alexander E. Pasion</a> | <span class="far fa-copyright"></span> All rights reserved.</span>
+                  </footer>
 
-
-    <!-- footer section start -->
-    <footer>
-        <span>Created By <a href="#Home">Cole Alexander E. Pasion</a> | <span class="far fa-copyright"></span> All
-            rights reserved.</span>
-    </footer>
+                  <script src="script.js"></script>
 <script>
-  $(document).ready(function(){
+$(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
@@ -921,14 +1029,14 @@ footer span a:hover{
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["BSIT Student"],
+        strings: ["IT Graduate"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["BSIT Student"],
+        strings: ["IT Graduate"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -957,8 +1065,6 @@ footer span a:hover{
         }
     });
 });
-  </script>
-    <script src="script.js"></script>
-</body>
-
-</html>
+</script>
+                </body>
+                </html>
